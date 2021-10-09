@@ -1,0 +1,45 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<label for="cars">Choose the No.Of Products to load into Image </label>
+
+<select name="cars" id="ddlProductCount">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="4">4</option>
+    <option value="7">7</option>
+</select>
+<button id="btnSubmit" onclick="getPreview()" class="btn btn-success">Submit </button>
+<script>
+
+    function SetId(id) {
+        $('#hdnId').val(id);
+
+    }
+    function getPreview() {
+        var id = $("#ddlProductCount option:selected").val();
+
+        
+        if (id > 0) {
+            //window.open(
+            //    'https://alldealz.ca/Deals/Preview/' + id + '',
+            //    '_blank' // <- This is what makes it open in a new window.
+            //);
+            //window.open(
+            //    'https://localhost:44337/Home/PreviewFlyer/' + id + '',
+            //    '_blank' // <- This is what makes it open in a new window.
+            //);
+            window.location.href = "/Home/PreviewFlyer/" + id;
+            //var getUrl = 'http://localhost:54239/Deals/FlyerPreview/' + id;
+        }
+        else {
+            alert('Error while Preview!');
+        }
+
+    }
+
+
+
+</script>
