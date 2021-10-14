@@ -34,7 +34,8 @@ namespace AceV.Controllers
         }
         public ActionResult PreviewFlyer(int id)
         {
-            int t = 31;
+            int t = 29;
+            string clientLogo = string.Empty;
             List<PreviewDeals> model = new List<PreviewDeals>();
 
             objBAL = new DealsModel();
@@ -55,6 +56,24 @@ namespace AceV.Controllers
                     }
                 }
             }
+            if (!string.IsNullOrEmpty(model[0].ClientLogo))
+            {
+                using (Image image = Image.FromFile(Server.MapPath("~/ProductImages/" + model[0].ClientLogo)))
+                {
+                    using (MemoryStream m = new MemoryStream())
+                    {
+                        image.Save(m, image.RawFormat);
+                        byte[] imageBytes = m.ToArray();
+
+                        // Convert byte[] to Base64 String
+                        string base64String = Convert.ToBase64String(imageBytes);
+                        clientLogo = base64String;
+                        // return base64String;
+                    }
+                }
+            }
+            ViewBag.OfferStartDate = model[0].StartDate;
+            ViewBag.OfferEndDate = model[0].StartDate;
             CalcPrice(model);
             if (Session["Flyer"] != null)
             {

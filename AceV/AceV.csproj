@@ -132,12 +132,15 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\products.css" />
+    <Content Include="Content\Fonts\roboto.css" />
     <Content Include="Content\vendor\jquery-3.3.1\jquery-3.3.1.js" />
     <Content Include="Content\vendor\jquery-3.3.1\jquery-3.3.1.min.js" />
     <Content Include="Content\vendor\jquery-3.3.1\jquery-3.3.1.slim.js" />
     <Content Include="Content\vendor\jquery-3.3.1\jquery-3.3.1.slim.min.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\roboto.css" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="ProductImages\01d3ccf2-ccba-4c35-bccf-abb0d3626d51.jpg" />
@@ -802,6 +805,7 @@
     <Content Include="ProductImages\Niru penu greek Pwr 200g.jpg" />
     <Content Include="ProductImages\Niru Plain Chilli Powder 450g.jpg" />
     <Content Include="ProductImages\Niru R curry PWDR.jpg" />
+    <Content Include="ProductImages\Niru rasam powder 200g" />
     <Content Include="ProductImages\Niru Raw Rice Flour 900g.jpg" />
     <Content Include="ProductImages\Niru raw Rice FLr 10lbs.jpg" />
     <Content Include="ProductImages\Niru Red Rice 10LB.jpg" />
@@ -1030,7 +1034,6 @@
     <Content Include="Scripts\App\html2canvas.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="ProductImages\Niru rasam powder 200g" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />

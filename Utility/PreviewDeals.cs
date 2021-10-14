@@ -14,6 +14,8 @@ namespace Utility
         public string Description { get; set; }
         public string image { get; set; }
         public Nullable<decimal> RegularPrice { get; set; }
+        public DateTime StartDate { get; set; }
+        public DateTime EndDate { get; set; }
         public decimal OfferPrice { get; set; }
         public Nullable<bool> IsActive { get; set; }
         public int UserId { get; set; }
@@ -26,6 +28,6 @@ namespace Utility
         public decimal Price { get; set; }
         public string ParentCategory { get; set; }
         public int CategoryId { get; set; }
-        public int ClientLogo { get; set; }
+        public string ClientLogo { get; set; }
     }
 }
